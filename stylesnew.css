@@ -423,6 +423,13 @@ border: 10px, solid, white;
 .clearfix {
   overflow: auto;
 }
+
+  .icon{
+
+    width: 200px;
+    padding: 0px;
+    margin: 0 auto;
+  }
 .img-main{
   
   border-radius: 10px;
