@@ -1,5 +1,6 @@
 body {
 background: rgba(244,103,110,1);
+  font-family: 'Nunito', sans-serif;
 background: -moz-linear-gradient(left, rgba(244,103,110,1) 0%, rgba(245,141,97,1) 50%, rgba(244,103,110,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(244,103,110,1)), color-stop(50%, rgba(245,141,97,1)), color-stop(100%, rgba(244,103,110,1)));
 background: -webkit-linear-gradient(left, rgba(244,103,110,1) 0%, rgba(245,141,97,1) 50%, rgba(244,103,110,1) 100%);
@@ -39,6 +40,58 @@ border:5px solid #eee;
     margin-bottom:30px;
     background-color:#eee;
     margin:35px auto;
+  }
+
+   .logo-sf {
+    display:block;
+    width:150px;
+    height:75px;
+    margin-bottom:30px;
+    background-color:#eee;
+    margin:35px auto;
+    background-image: url(icon/salesforce.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+   .logo-v {
+    display:block;
+    width:150px;
+    height:75px;
+    margin-bottom:30px;
+    background-color:#eee;
+    margin:35px auto;
+    background-image: url(icon/vlocity.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+   .logo-a {
+    display:block;
+    width:150px;
+    height:75px;
+    margin-bottom:30px;
+    background-color:#eee;
+    margin:35px auto;
+    background-image: url(icon/apttus.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .logo-acn {
+    display:block;
+    width:150px;
+    height:75px;
+    margin-bottom:30px;
+    background-color:#eee;
+    margin:35px auto;
+    background-image: url(icon/acn.jpg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .client h2, .client h3 {
@@ -93,8 +146,6 @@ box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
     text-align: center;
     padding:20px;
     width:100%;
-    
-    
     position:relative;
     top:0px;
     z-index:-1;
@@ -147,7 +198,6 @@ text-align: center;
 }
 
 .button span {
-  cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -309,7 +359,7 @@ top: 5px;
   flex-wrap: wrap;
 }
 #mainboxwide{
-  padding-top: 100px;
+  padding-top: 80px;
   width:100%; margin: 0 auto;
   box-sizing: border-box;
   justify-content: center;
@@ -324,6 +374,9 @@ top: 5px;
 .containergrey{
 
   background-color: #262626;
+  color: #708090;
+  letter-spacing: 6.5px;
+
 }
 
 
@@ -335,31 +388,123 @@ border: 2px #000;
 }
 
 .card{
-width: 400px;
+width: 300px;
 line-height: 1.2em;
 font-family: Montserrat, sans-serif;
 text-align: center;
-border-radius: 25px;
 min-height: 250px;
-padding-: 10px;
+padding: 10px;
+border-radius: 1px;
+text-align: center;
 margin: 30px;
 transition: 0.3s;
 margin-bottom: 50px;
-background: #F2F2F2;
-box-shadow: 0px 1px 10px 8px rgba(232,232,232,1);
+background: #fff;
+border: 10px, solid, white;
+box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+cursor: pointer;
+border: 10px, solid, white;
+
 }
 
+.img-responsive {
+  height: 250px;
+  width: 400px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #fff;
+}
+.clearfix {
+  overflow: auto;
+}
+.img-main{
+  
+  border-radius: 10px;
+  border: #DCDCDC solid 0px;
+  display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+  width: 50%;
+ 
+
+
+}
 .insert{
 padding-top: 5px;
-font-size: 14px;
+font-size: 12px;
+background-color: #fff;
 padding: 5px;
+ border-top: 5px solid #F8F8F8;
+margin-top: 10px;
+height: 25px;
 
 }
+
+.card-sub{
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.card-sub:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-sub h3{
+  font-weight: 600;
+  margin-left: 60px; 
+  margin-top: 80px;
+}
+
+.card-sub img{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  max-height: 120px;
+}
+
+.card-sub1{
+  background-image: url('icon/uptick.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 80px;
+
+}
+
+.card-sub2{
+   background-image: url('icon/consulting.png');
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+.card-sub3{
+   background-image: url('icon/groundUP.png');
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+}
+
+@media(max-width: 990px){
+  .card{
+    margin: 20px;
+  }
+} 
+
+
 img{
-  width: 100%;
+  
 }
 
 p{
@@ -374,10 +519,10 @@ p{
   margin-top: 20px;
 }
 
-.insert h4{
-  text-align: center;
+.insert h5{
   font-weight: bold;
-  font-size: 17px;
-  font-family: Gill Sans, sans-serif;
+  font-size: 15px;
+
 }
+
 
